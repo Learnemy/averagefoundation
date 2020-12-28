@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: 'Didact Gothic', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 a {
@@ -47,9 +47,18 @@ h6 {
 
 p {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 20px;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.large {
+  font-size: 1.4em;
 }
 
 section {
@@ -183,6 +192,7 @@ header.masthead .header-content h1 {
 header.masthead .header-content p {
   font-size: 30px;
   text-align: left !important;
+  letter-spacing: 2px;
 }
 
 
@@ -240,6 +250,10 @@ section.download .badges .badge-link img {
   section.download h2 {
     font-size: 70px;
   }
+}
+
+section.features {
+  background: url("../img/pattern7.png");
 }
 
 section.features .section-heading {
@@ -424,18 +438,20 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  border-color: #fdcc52;
-  background-color: #fdcc52;
+  border-color: #D36E99;
+  background-color: #E69FBD;
 }
 
 .btn {
   border-radius: 300px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
+  border-color: #662077;
+  background-color: #7A378B;
 }
 
 .btn-xl {
-  font-size: 11px;
+  font-size: 12px;
   padding: 15px 45px;
 }
