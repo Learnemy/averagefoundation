@@ -287,11 +287,12 @@ section.features .device-container {
 section.features .feature-item {
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 section.features .feature-item h3 {
   font-size: 30px;
+  text-align: left;
 }
 
 section.features .feature-item i {
@@ -454,4 +455,26 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-xl {
   font-size: 12px;
   padding: 15px 45px;
+}
+
+.faq li {padding:20px; }
+
+.faq li.q {
+  background: #4FC2E;
+  font-weight: bold;
+  font-size: 120%;
+  border-bottom: 1px #ddd solid;
+  cursor: pointer;
+}
+
+.faq li.a {
+  background:#3BB0D6;
+  display:none;
+  color:#fff;
+}
+
+.rotate {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
