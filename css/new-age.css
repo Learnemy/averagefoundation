@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #fdcc52;
+  color: #D36E99;
   transition: all .35s;
 }
 
@@ -58,7 +58,7 @@ p {
 }
 
 .large {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 section {
@@ -367,6 +367,7 @@ section.cta .overlay {
 .faq li.q {
   font-weight: bold;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .faq li.a {
@@ -474,6 +475,26 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-xl {
   font-size: 12px;
   padding: 15px 45px;
+}
+
+.bio-pic, .bio-pic img{
+  max-width: 160px;
+  max-height: 160px;
+  padding:0px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+
+.bio-pic img:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.cat-img{
+  max-width: 120px;
+  max-height: 120px;
+  margin: auto;
 }
 
 
