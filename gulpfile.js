@@ -15,9 +15,8 @@ const uglify = require("gulp-uglify");
 var deploy = require('gulp-gh-pages');
 
 
-/**
- * Push build to gh-pages
- */
+
+// Push build to gh-pages
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*")
     .pipe(deploy())
@@ -27,13 +26,7 @@ gulp.task('deploy', function () {
 const pkg = require('./package.json');
 
 // Set the banner content
-const banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/StartBootstrap/<%= pkg.name %>/blob/master/LICENSE)\n',
-  ' */\n',
-  '\n'
-].join('');
+const banner = [''];
 
 // BrowserSync
 function browserSync(done) {
