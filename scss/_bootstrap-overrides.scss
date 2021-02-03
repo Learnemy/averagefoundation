@@ -29,16 +29,14 @@ body {
 //   border-color: white;
 // }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: 'Merriweather', serif;
-//   font-weight: 200;
-//   letter-spacing: 1px;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
 
 // p {
 //   font-size: 18px;
@@ -440,32 +438,6 @@ body {
 // .no-gutter > [class*='col-'] {
 //   padding-right: 0;
 //   padding-left: 0;
-// }
-
-// .btn-outline {
-//   color: white;
-//   border: 1px solid;
-//   border-color: white;
-// }
-
-// .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
-//   color: white;
-//   border-color: #D36E99;
-//   background-color: #E69FBD;
-// }
-
-// .btn {
-//   border-radius: 300px;
-//   font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
-//   letter-spacing: 2px;
-//   text-transform: uppercase;
-//   border-color: #662077;
-//   background-color: #7A378B;
-// }
-
-// .btn-xl {
-//   font-size: 12px;
-//   padding: 15px 45px;
 // }
 
 // .bio-pic, .bio-pic img{
