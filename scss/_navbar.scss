@@ -7,7 +7,7 @@
 
   .navbar {
     &-brand {
-      @include heading-font;
+      @include alt-font;
       color: $theme-primary;
     }
 
