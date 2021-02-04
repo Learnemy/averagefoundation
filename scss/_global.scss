@@ -1,32 +1,24 @@
 // Global styling for this template
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  background: none;
 }
 
 body {
-    @include body-font;
-}
-
-a {
-    color: $theme-primary;
-    @include transition-all;
-    &:hover,
-    &:focus {
-        color: darken($theme-primary, 10%);
-    }
+  @include body-font;
 }
 
 hr {
-    max-width: 100px;
-    margin: 25px auto 0;
-    border-width: 1px;
-    border-color: fade-out($gray-darker, .9);
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: fade-out($gray-darker, 0.9);
 }
 
 hr.light {
-    border-color: white;
+  border-color: white;
 }
 
 h1,
@@ -35,18 +27,42 @@ h3,
 h4,
 h5,
 h6 {
-    @include heading-font;
+  @include heading-font;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  font-size: $spacing-l;
+  line-height: 1.5;
+  margin-bottom: $spacing-m;
 }
 
 section {
-    padding: 100px 0;
-    h2 {
-        font-size: 50px;
-    }
+  padding: $spacing-3xl * 2 0;
+}
+
+a {
+  color: $theme-primary;
+  @include transition-all;
+  &:hover,
+  &:focus {
+    color: $theme-tertiary;
+  }
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+  color: white;
+  background-color: $theme-secondary;
+}
+
+.btn {
+  @include alt-font;
+  color: white;
+  border: 1px solid;
+  border-radius: 300px;
+  background-color: $theme-primary;
+  font-size: $spacing-s;
+  padding: $spacing-m $spacing-4xl;
 }
