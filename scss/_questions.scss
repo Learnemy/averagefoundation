@@ -1,0 +1,29 @@
+section#questions {
+  ul.faq {
+    padding-left: 0;
+    list-style: none;
+    font-size: $spacing-l;
+
+    li.q {
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: $spacing-m;
+
+      .rotate {
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+    }
+
+    li.a {
+      padding-left: $spacing-l;
+      margin-bottom: $spacing-3xl;
+      display: none;
+    }
+
+    .cat-img {
+      width: 120px;
+    }
+  }
+}

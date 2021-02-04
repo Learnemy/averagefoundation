@@ -30,10 +30,38 @@ h6 {
   @include heading-font;
 }
 
+h1 {
+  font-size: $font-size-3xl;
+}
+
+h2 {
+  font-size: $font-size-2xl;
+}
+
+h3 {
+  font-size: $font-size-xl;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: $font-size-hero;
+  }
+  h2 {
+    font-size: $font-size-2xl;
+  }
+  h3 {
+    font-size: $font-size-xl;
+  }
+}
+
 p {
   font-size: $spacing-l;
   line-height: 1.5;
   margin-bottom: $spacing-m;
+}
+
+p.large {
+  font-size: $font-size-xl;
 }
 
 section {
