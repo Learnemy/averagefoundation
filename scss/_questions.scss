@@ -5,9 +5,11 @@ section#questions {
     font-size: $spacing-l;
 
     li.q {
+      margin-top: $spacing-l;
+      margin-bottom: $spacing-m;
       font-weight: 600;
       line-height: 1.5;
-      margin-bottom: $spacing-m;
+      cursor: pointer;
 
       .rotate {
         -moz-transform: rotate(90deg);

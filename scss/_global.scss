@@ -31,37 +31,27 @@ h6 {
 }
 
 h1 {
-  font-size: $font-size-3xl;
+  font-size: $font-size-2xl;
+  margin-bottom: $spacing-l;
 }
 
 h2 {
-  font-size: $font-size-2xl;
+  font-size: $font-size-xl;
 }
 
 h3 {
-  font-size: $font-size-xl;
-}
-
-@media (min-width: 992px) {
-  h1 {
-    font-size: $font-size-hero;
-  }
-  h2 {
-    font-size: $font-size-2xl;
-  }
-  h3 {
-    font-size: $font-size-xl;
-  }
+  font-size: $font-size-l;
 }
 
 p {
-  font-size: $spacing-l;
+  font-size: $font-size-m;
   line-height: 1.5;
   margin-bottom: $spacing-m;
+  letter-spacing: 0.8px;
 }
 
 p.large {
-  font-size: $font-size-xl;
+  font-size: $font-size-l;
 }
 
 section {
@@ -91,6 +81,35 @@ a {
   border: 1px solid;
   border-radius: 300px;
   background-color: $theme-primary;
-  font-size: $spacing-s;
-  padding: $spacing-m $spacing-4xl;
+  font-size: $spacing-xs;
+  padding: $spacing-m $spacing-3xl;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: $font-size-hero;
+    margin-bottom: $spacing-l;
+  }
+  h2 {
+    font-size: $font-size-2xl;
+    margin-bottom: $spacing-m;
+  }
+  h3 {
+    font-size: $font-size-xl;
+    margin-bottom: $spacing-m;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: $spacing-m;
+  }
+  p.large {
+    font-size: $font-size-xl;
+  }
+
+  .btn {
+    @include alt-font;
+    font-size: $spacing-s;
+    padding: $spacing-m $spacing-4xl;
+  }
 }

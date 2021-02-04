@@ -1,10 +1,29 @@
 section#apply {
+  background: url("../img/pattern7.png");
+
   .row > * {
     margin-bottom: $spacing-xl;
+  }
+
+  .header-content {
+    margin-bottom: $spacing-4xl;
+  }
+
+  .col-lg-6 {
+    padding: 0;
   }
 
   ul {
     padding-left: 0;
     list-style: none;
+  }
+
+  @media (min-width: 992px) {
+    .header-content {
+      margin-bottom: 0;
+    }
+    .col-lg-6 {
+      padding: 0 $spacing-m;
+    }
   }
 }

@@ -1,42 +1,17 @@
 // Styling for the masthead
 header {
   height: 100vh;
+  background: url("../img/pattern7.png");
 
   .header-content {
-    h1 {
-      font-size: $font-size-3xl;
-    }
-
     p {
       @include heading-font;
       font-size: $font-size-l;
-    }
-
-    .btn:hover,
-    .btn:focus,
-    .btn:active,
-    .btn.active {
-      color: white;
-      background-color: $theme-secondary;
-    }
-
-    .btn {
-      @include alt-font;
-      color: white;
-      border: 1px solid;
-      border-radius: 300px;
-      background-color: $theme-primary;
-      font-size: $spacing-s;
-      padding: $spacing-m $spacing-4xl;
     }
   }
 
   @media (min-width: 992px) {
     .header-content {
-      h1 {
-        font-size: $font-size-hero;
-      }
-
       p {
         font-size: $font-size-xl;
       }

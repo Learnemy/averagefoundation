@@ -24,6 +24,7 @@
     }
 
     &-toggler {
+      @include alt-font;
       font-size: $font-size-xs;
       color: $theme-primary;
       padding: $spacing-2xs $spacing-xs;

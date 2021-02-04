@@ -11,12 +11,11 @@ footer {
   }
 
   .container {
-    background: none;
     padding: $spacing-l 0;
   }
 
   .list-inline {
-    margin-bottom: 0;
+    margin-bottom: $spacing-4xl;
     font-size: $font-size-xl;
 
     &-item a {
