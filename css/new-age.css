@@ -89,7 +89,7 @@ a:hover, a:focus {
   padding: 16px 32px;
 }
 
-a #middle-button {
+#middle-button {
   margin-bottom: 1em;
   display: block;
   margin-right: auto;
