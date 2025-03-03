@@ -294,3 +294,11 @@ footer .list-inline-item a i {
 footer .list-inline-item a:hover, footer .list-inline-item a:focus, footer .list-inline-item a:active, footer .list-inline-item a.active {
   background: rgba(211, 110, 148, 0.7);
 }
+
+#middle-button {
+  margin-bottom: 1em;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
